@@ -14,32 +14,32 @@ In this tab, you can create a new instance/machine. We are using **Ubuntu 18.4**
 
 1. Firstly choose name for your server:
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/names_and_tags.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/names_and_tags.png)
+[![](/images/names_and_tags.png)](/images/names_and_tags.png)
 
 2. Choose your machine's operating system like that:
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/machine_image.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/machine_image.png)
+[![](/images/machine_image.png)](/images/machine_image.png)
 
 
 3. Choose your instance type like that:
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/instance_type.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/instance_type.png)
+[![](/images/instance_type.png)](/images/instance_type.png)
 
  
 4. We need a key pair because we can't create password for root user when we are creating our server:
 
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/key_pair.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/key_pair.png)
+[![](/images/key_pair.png)](/images/key_pair.png)
 
 
 5. When you are creating your key pair, you should be careful about your key's extension. Because you need your_key.ppk file. But if you hadn't created your key with .ppk extension, don't worry about that. Because, I will explain converting your key file from .pem to .ppk in the other section. 
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/create_key_pair.png)
+[![](/images/create_key_pair.png)
 
 
 6. If your Summary part like that, we can launch our instance:
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/launch_instance.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/launch_instance.png)
+[![](/images/launch_instance.png)](/images/launch_instance.png)
 
 
 #### Converting key pair using PuTTy:
@@ -51,7 +51,7 @@ In this section we'll convert our key with .ppk extension to key with .pem exten
 
 2. Open your file with .pem extension with using Load button. After that, you can click the save public key button.
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/convert_key.png)
+[![](/images/convert_key.png)
 
 
 3. Save public key with Save button. But don't forget where you save.
@@ -62,12 +62,12 @@ In this section we'll access our server with our key pair, remove with accessing
 
 1.  Your ip here: 
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/ip_address.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/ip_address.png)
+[![](/images/ip_address.png)](/images/ip_address.png)
 
 
 2. Follow **Connection/SSH/Auth** path and browse directory where you saved your key. And after that Click open button.
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/select_key_file.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/select_key_file.png)
+[![](/images/select_key_file.png)](/images/select_key_file.png)
 
 
 3. You should login as ubuntu where opened command line window:
