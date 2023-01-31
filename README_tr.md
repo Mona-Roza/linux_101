@@ -13,33 +13,33 @@ Artık bu sekme üzerinden kendimize bir instance yani bir makine oluşturabilir
 
 1. Öncelikle isimlendirmemizi yapıyoruz:
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/names_and_tags.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/names_and_tags.png)
+[![](/images/names_and_tags.png)](/images/names_and_tags.png)
 
 
 2.  Makinemizin işletim sistemini seçiyoruz:
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/machine_image.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/machine_image.png)
+[![](/images/machine_image.png)](/images/machine_image.png)
 
 
 3. Instance typemızı seçiyoruz:
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/instance_type.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/instance_type.png)
+[![](/images/instance_type.png)](/images/instance_type.png)
 
 
 4. AWS üzerinde root kullanıcımız için direkt şifre oluşturamıyoruz, bu nedenle makinemize bağlabilmek için bir key pair almamız gerekiyor:
 
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/key_pair.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/key_pair.png)
+[![](/images/key_pair.png)](/images/key_pair.png)
 
 
 5. Key pairi oluştururken dikkat etmemiz gereken noktalardan bir tanesi .ppk uzantılı şekilde oluşturmaktır. Eğer key pairinizi .ppk uzantılı oluşturmadıysanız bir sonraki bölümde .pem uzantısından .ppk uzantısına dönüşüm için gerekli adımlar belirtilecektir. (Resimde yanlış belirtilmiş, düzelteceğim.)
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/create_key_pair.png)
+[![](/images/create_key_pair.png)
 
 
 6. Eğer Summary bölümünüz aşağıda bulunan resimdeki gibiyse artık instancemizi başlatabiliriz:
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/launch_instance.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/launch_instance.png)
+[![](/images/launch_instance.png)](/images/launch_instance.png)
 
 #### PuTTy ile key pair dönüştürme:
 Aşağıdaki adımları izleyerek .pem uzantılı key pairimizi .ppk uzantılı hale çevireceğiz. Bu adımlara geçmeden  önce PuTTy edinmeniz gerekmektedir:
@@ -49,7 +49,7 @@ Aşağıdaki adımları izleyerek .pem uzantılı key pairimizi .ppk uzantılı 
 
 2. Load sekmesi ile AWS'den edindiğimiz .pem uzantılı keyimizi açıyoruz ve generate işlemi ile .ppk uzantılı dosyaya çeviriyoruz:
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/convert_key.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/convert_key.png)
+[![](/images/convert_key.png)](/images/convert_key.png)
 
 
 3. Save public key diyerek keyimizi bildiğimiz bir konuma kaydedelim.
@@ -60,12 +60,12 @@ Aşağıdaki adımları izleyerek .ppk uzantılı keyimizi kullanarak serverimiz
 
 1.  Ip adresimizi bu bölüme yazalım:
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/convert_key.png)
+[![](/images/convert_key.png)
 
 
 2.  **Connection/SSH/Auth** sekmesine geçiş yapalım ve keyimizi indirdiğimiz konumu seçelim ardından open ile onaylayalım:
 
-[![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/select_key_file.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/select_key_file.png)
+[![](/images/select_key_file.png)](/images/select_key_file.png)
 
 
 3.  Açılan terminalde aşağıdaki gibi devam edelim:
