@@ -34,7 +34,7 @@ Artık bu sekme üzerinden kendimize bir instance yani bir makine oluşturabilir
 
 5. Key pairi oluştururken dikkat etmemiz gereken noktalardan bir tanesi .ppk uzantılı şekilde oluşturmaktır. Eğer key pairinizi .ppk uzantılı oluşturmadıysanız bir sonraki bölümde .pem uzantısından .ppk uzantısına dönüşüm için gerekli adımlar belirtilecektir. (Resimde yanlış belirtilmiş, düzelteceğim.)
 
-[![](/images/create_key_pair.png)
+[![](/images/create_key_pair.png)]
 
 
 6. Eğer Summary bölümünüz aşağıda bulunan resimdeki gibiyse artık instancemizi başlatabiliriz:
