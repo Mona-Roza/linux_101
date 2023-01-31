@@ -34,7 +34,7 @@ In this tab, you can create a new instance/machine. We are using **Ubuntu 18.4**
 
 5. When you are creating your key pair, you should be careful about your key's extension. Because you need your_key.ppk file. But if you hadn't created your key with .ppk extension, don't worry about that. Because, I will explain converting your key file from .pem to .ppk in the other section. 
 
-[![](/images/create_key_pair.png)
+[![](/images/create_key_pair.png)](/images/create_key_pair.png)
 
 
 6. If your Summary part like that, we can launch our instance:
