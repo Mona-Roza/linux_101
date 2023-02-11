@@ -125,7 +125,7 @@ Yürütme iznini vermek için `chmod 755 myscript.sh` komutu kullanılır.
 
 :warning: Bir script çalıştırılırken `./myscript.sh` veya `/path/to/script/myscript.sh` şeklinde çalıştırılmalıdır. Bu çalıştırma biçimiyle yalnızca belirtilen konumdaki scripti çalıştırabilirsiniz. Eğer herhangi bir konumdan scriptinize direkt erişim yapmak isterseniz, bu scriptin bulunduğu konumu $PATH'e eklemeniz gerekir.
 
-* Bir script yazılırken başlangıcına bu kümenin bir script olduğunu belirten -aynı HTML'de olduğu gibi- bir karakter ve format dizisi eklenir.Bu format dizisine Shebang adı verilir. Shebang `#!/bin/bash` şeklindedir.
+* Bir script yazılırken başlangıcına bu kümenin bir script olduğunu belirten -aynı HTML'de olduğu gibi- bir karakter ve format dizisi eklenir. Bu format dizisine Shebang adı verilir. Shebang `#!/bin/bash` şeklindedir.
 
 :warning: Shebang her zaman ilk satırda bulunmalıdır. Boş bir satır dahi bırakılmamalıdır. 
 
