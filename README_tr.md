@@ -121,7 +121,7 @@ user@bash: ./myscript.sh
 bash: ./myscript.sh: Permission denied
 ```
 
-Yürütme iznini vermek için `chmod 755 myscript.sh` komutu kullanılız.
+Yürütme iznini vermek için `chmod 755 myscript.sh` komutu kullanılır.
 
 :warning: Bir script çalıştırılırken `./myscript.sh` veya `/path/to/script/myscript.sh` şeklinde çalıştırılmalıdır. Bu çalıştırma biçimiyle yalnızca belirtilen konumdaki scripti çalıştırabilirsiniz. Eğer herhangi bir konumdan scriptinize direkt erişim yapmak isterseniz, bu scriptin bulunduğu konumu $PATH'e eklemeniz gerekir.
 
