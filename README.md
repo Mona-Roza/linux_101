@@ -1,7 +1,6 @@
 ### Getting Started
    In this section we'll talk about the key pairs, commands and packages when we are using server. If you have any ideas or feedbacks about my notes, you can type in issues, you'll help me and the other learners. 
 
-
 ### Create Instance with AWS
 If you want to use this service, you should log in your AWS console.
 

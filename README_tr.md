@@ -107,3 +107,33 @@ komutlarınan  bir tanesiyle sshd hizmetimizi yeniden başlatıyoruz.
 `sudo passwd user-name`
 
 Bu adımlar ile şifre ile erişim için makinemizin ayarlarını düzenledik. Artık Windows için herhangi bir SSH clienti kullanarak, MacOS veya Linux için kendi konsolunuza  `ssh root@ip-adsress` yazarak bağlantı kurabilirsiniz. 
+
+### Bash Scripting:
+
+* Bash betikleri olan dosyalara .sh uzantısı (örneğin myscript.sh) vermek gelenekseldir. 
+
+:warning: Linux uzantısız bir sistemdir, dolayısıyla bir betiğin çalışması için .sh uzantısına sahip olması gerekmez.
+
+* Bir betiği çalıştırabilmek için yürütme izni verilmesi gerekir (güvenlik nedeniyle bu izin genellikle varsayılan olarak ayarlanmaz). Komut dosyasını çalıştırmadan önce yürütme iznini vermeyi unutursanız, aşağıdaki hatayı alırsınız:
+
+```bash
+user@bash: ./myscript.sh
+bash: ./myscript.sh: Permission denied
+```
+
+Yürütme iznini vermek için `chmod 755 myscript.sh` komutu kullanılız.
+
+:warning: Bir script çalıştırılırken `./myscript.sh` veya `/path/to/script/myscript.sh` şeklinde çalıştırılmalıdır. Bu çalıştırma biçimiyle yalnızca belirtilen konumdaki scripti çalıştırabilirsiniz. Eğer herhangi bir konumdan scriptinize direkt erişim yapmak isterseniz, bu scriptin bulunduğu konumu $PATH'e eklemeniz gerekir.
+
+* Bir script yazılırken başlangıcına bu kümenin bir script olduğunu belirten -aynı HTML'de olduğu gibi- bir karakter ve format dizisi eklenir.Bu format dizisine Shebang adı verilir. Shebang `#!/bin/bash` şeklindedir.
+
+:warning: Shebang her zaman ilk satırda bulunmalıdır. Boş bir satır dahi bırakılmamalıdır. 
+
+:warning: Shebang genel anlamda interpreterin konumunu belirtir. Bu nedenle farklı konum bildirme biçimleri kullanılabilir. Ancak en garanti yöntem mutlak konum bildirme olduğundan en çok bu yöntem tercih edilir. 
+
+
+
+
+### Kaynaklar:
+
+* https://ryanstutorials.net/bash-scripting-tutorial/
