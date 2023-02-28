@@ -57,7 +57,7 @@ Aşağıdaki adımları izleyerek .ppk uzantılı keyimizi kullanarak serverimiz
 
 1. Ip adresimizi bu bölüme yazalım:
 
-   ![convert-key](/images/convert_key.png)
+   ![convert-key](/images/ip_address.png)
 
 2. **Connection/SSH/Auth** sekmesine geçiş yapalım ve keyimizi indirdiğimiz konumu seçelim ardından open ile onaylayalım:
 
