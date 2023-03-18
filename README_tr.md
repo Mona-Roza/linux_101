@@ -128,6 +128,7 @@ Bu adımlar ile şifre ile erişim için makinemizin ayarlarını düzenledik. A
 * Unix mantıksal olarak çok katmanlı bir sistemdir.
 
 <img src="images/unix-structure.png">
+
 [Resim 1.1](https://static.javatpoint.com/linux/images/unix-operating-system3.png)
 
 * Sistemdeki her katmanın görevi farklıdır. Bu nedenle katmanların birbirleriyle iletişim kurmaları gerekir. Ancak her katman birbiriyle iletişim kuramaz.
@@ -161,6 +162,7 @@ Bu adımlar ile şifre ile erişim için makinemizin ayarlarını düzenledik. A
 * i-node, Unix dosyalama sistemi üzerinde bulunan, dosyanın ismi haricindeki dosyaya ait bilgileri depolayan bir veri yapısıdır. 
 
 <img src="/images/unix-file-system-hierarchy.png">
+
 [Resim 1.2](https://computingforgeeks.com/wp-content/uploads/2020/02/linux-file-system-hierarchy-1-1268x420.png?ezimgfmt=ng:webp/ngcb23)
 
 #### Dizin İşlevleri
