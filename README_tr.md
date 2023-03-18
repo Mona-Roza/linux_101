@@ -11,11 +11,11 @@
     - [Unix Yapısı](#unix-yapısı)
     - [Unix Dizin Sistemi](#unix-dizin-sistemi)
       - [Dizin İşlevleri](#dizin-i̇şlevleri)
-        - [/etc dizini](#etc-dizini)
-        - [/dev dizini](#dev-dizini)
-        - [/usr dosya sistemi](#usr-dosya-sistemi)
-        - [/var dosya sistemi](#var-dosya-sistemi)
-        - [/proc dosya sistemi](#proc-dosya-sistemi)
+      - [/etc dizini](#etc-dizini)
+      - [/dev dizini](#dev-dizini)
+      - [/usr dosya sistemi](#usr-dosya-sistemi)
+      - [/var dosya sistemi](#var-dosya-sistemi)
+      - [/proc dosya sistemi](#proc-dosya-sistemi)
   - [Bash Scripting](#bash-scripting)
   - [Kaynaklar](#kaynaklar)
 ## Başlarken
@@ -190,12 +190,11 @@ Bu adımlar ile şifre ile erişim için makinemizin ayarlarını düzenledik. A
 | /sbin | Açılış sonrası root kullanıcı tarafından kullanılacak komutları içerir. |
 | /lib | (library) Kök dosya sistemindeki programlar tarafından kullanılan paylaşımlı kütüphaneleri içerir. |
 | /lib/modules | Sistemin açılışı sırasında sorunların önlenmesi için ihtiyaç duyulan yüklenebilir çekirdek modüllerini içerir. |
-| /dev | (devices) Aygıtlara ait dosyaları içerir. |
 | /tmp | (temporary) Geçici dosyaları içerir. |
 | /boot | LILO (Linux Boot Loader) ve benzeri program dosyalarını içerir. Eğer sistemde birden çok işletim sistemi kuruluysa bu klasörde boot loaderleri bulunur. |
 | /mnt | (mount) Sisteme bağlanmış bir harici depolama aygıtının içeriğinin görüntüleri bulunur. |
 
-##### /etc dizini
+#### /etc dizini
 
 * (et cetera) Makinaya özel yapılandırma dosyalarını içerir. 
 
@@ -231,13 +230,15 @@ Bu adımlar ile şifre ile erişim için makinemizin ayarlarını düzenledik. A
 | login [-p] [-h konak] [kullanıcı] [değişken=değer] | Kullanıcının sisteme girişini sağlar. /var/run/utmp, /var/log/wtmp, /etc/passwd, /etc/shadow, /etc/motd, /etc/nologin, /etc/ttytype, ~/.hushlogin, /etc/login.defs dizinlerini kullanır.|
 | chsh [parametreler] [kullanıcı] | Kullanıcının oturum açma kabuğunu değiştirir. /etc/passwd, /etc/shells, /etc/login.defs dizinlerini kullanır. |
 
-##### /dev dizini
+#### /dev dizini
 
-##### /usr dosya sistemi
+* (devices) Aygıtlara ait dosyaları içerir.
 
-##### /var dosya sistemi 
+#### /usr dosya sistemi
 
-##### /proc dosya sistemi
+#### /var dosya sistemi 
+
+#### /proc dosya sistemi
 
 ## Bash Scripting
 
