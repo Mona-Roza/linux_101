@@ -232,11 +232,46 @@ Bu adımlar ile şifre ile erişim için makinemizin ayarlarını düzenledik. A
 
 #### /dev dizini
 
-* (devices) Aygıtlara ait dosyaları içerir.
+* (devices) Aygıtlara ait giriş/çıkış dosyalarını içeren dizindir.
+
+:warning: Ethernet kartı aygıtı hariç tüm aygıtlara ait düğümler burada bulunur.
+
+* Sistem kurulumu sırasında aygıt dosyaları burada yaratılır. Eğer sistem kurulumundan sonra bir aygıt dosyası yaratılacaksa /dev/MAKEDEV betiği ile yaratılabilir. Ancak bu işlem sadece standart MAKEDEV betiği ile oluşturulamayan aygıt dosyaları ve bağları için yapılır.
 
 #### /usr dosya sistemi
 
+* (user) İşletim sistemini kullanan tüm kullanıcılara ait program dosyaları bu dizinde tutulur. 
+
+* Yerel kullanıcılar tarafından yüklenen diğer programlar /usr/local altına gider. Bu sayede aynı dağıtımdan güncelleme veya başka bir dağıtımdan kurulum yapmak mümkün olur. Bu olaylar sayesinde yerel dosyalarda bir kayıp söz konusu olmaz ve bütün dosyaları yeniden yüklemek gerekmez. 
+
+* /usr dizininin alt dizinleri ve görevleri aşağıdaki tabloda verilmiştir.
+
+| Dizin | Görevi |
+|---|---|
+| /usr/X11R6 | Masaüstü yönetim sistemleri çeşitlerinden olan X Pencere Sistemi dosyalarını içerir. Bu dosyaların sisteme entegre olmamasının sebebi X'in yüklenmesi ve geliştirilmesidir. |
+| /usr/bin | Çoğu kullanıcı komut dosyalarının bulunduğu dizindir. (Windows'ta bulunan program files kısmı gibi düşünülebilir.) |
+| /usr/sbin | (sudo) Kök dosya sistemine ihtiyaç duymayan sistem yöneticisi komutlarının bulunduğu dizindir. |
+| /usr/share/man, /usr/share/info, /usr/share/doc | Klavuz sayfalarını içerir. Harici bir program bile olsa yüklendikten sonra `isim man` şeklinde bir komut yazılarak program komutu ile ilgili tüm kullanım biçimlerine, bu komutun ne işe yaradığına dair bilgilere ulaşabilirsiniz. |
+| /usr/include | .h uzantılı C kütüphane dosyaları burada bulunur. |
+| /usr/lib | (library) Programlar ve alt sistemler için değişmeyen veri dosyaları burada bulunur. |
+| /usr/local | Yerel yöneticinin kullanımına tahsis edilmiş, dağıtımlar tarafından olmayan tüm program dosyaları burada bulunur. |
+
 #### /var dosya sistemi 
+
+* (Variable) Değişken sistem bilgilerinin saklandığı bölümdür. İstisnai durumlar dışında diğer sistemler ile paylaşılmayan bir dizindir.
+
+| Dizin | Görevi |
+|---|---|
+| /var/cache/man | İsteğe göre düzenlenmiş klavuz sayfalar için önbellekleme alanıdır. Ön-biçemli klavuz sayfaları /usr/share/man/cat* dizinine gelir ardından biçem verilen klavuz sayfaları bu önbellekleme alanına saklanır. |
+| /var/games | /usr altındaki oyunlara ait her türlü bilgi burada saklanır. Böylece /usr ile salt okunur bağlantı sağlanır. |
+| /var/lib | Sistemin çalışması esnasında değişen dosyalar ve bilgiler burada tutulur. |
+| /var/local | /usr/local altında kurulmuş çeşitli uygulamalara ait bilgiler burada bulunur. (Örneğin; sistem yöneticileri tarafından kurulmuş uygulamalar). Şayet ayarlanmış veya yönlendirilmiş iseler yerel olarak kurulmuş bile olsalar bu uygulamalar, /var dizini altındaki diğer bölgeleri de kullanır. |
+| /var/lock | Kilit (lock) dosyaları. Pek çok süreç belirli aygıt ya da dosyaları kullandıklarını göstermek için /var/lock dizini altında bir kilit dosyası oluşturur. Diğer süreçler buraya dikkat eder ve böylece aygıt ya da dosya çakışması olması önlenir. !Kilit dosyası yaratmazsak programlarda çakışmalar oluşur. |
+| /var/log | Sistem yöneticisini ilgilendiren günlük kayıtları burada tutulur. Syslog (tüm çekirdek ve sistem yazılımlarının iletileri /var/log/messages dosyasında saklanır) ve login(1) (sisteme kullanıcı giriş ve çıkışları /var/log/wtmp dosyasında saklanır) uygulamalarının kayıtları burada tutulur. |
+| /var/mail | FHS tarafından onaylanan, kullanıcı eposta kutularının bulunduğu dosyalardır. Bazı dağıtımlarda /var/spool/mail içinde tutulur. |
+| /var/run | Bir sonraki açılışa kadar geçerli olan sistem hakkında bilgi içeren dosyalar burada tutulur. Örneğin /var/run/utmp sisteme bağlı durumdaki kişiler hakkında bilgi içerir. |
+| /var/spool | Haberler, yazıcı kuyrukları ve diğer kuyruktaki işler hakkında bilgi içeren dizindir. Her biri için ayrı bir alt dizin mevcuttur. /var/spool/news gibi.. Bazı dağıtımlarda eposta kutularını içeren dosyalarda /var/spool/mail dizini altındadır. |
+| /var/tmp | Çok büyük veya çok uzun bir zamandır var olan /tmp dizini içerisindeki geçici dosyaları içerir. Sistem yöneticisi /var/tmp içerisinde çok eski dosyalara müsaade etmeyebilir. |
 
 #### /proc dosya sistemi
 
